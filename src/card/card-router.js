@@ -6,8 +6,6 @@ const { cards, lists } = require('../store')
 const cardRouter = express.Router()
 const bodyParser = express.json()
 
-
-
 cardRouter
   .route('/card')
   .get((req, res) => { res.json(cards) })
